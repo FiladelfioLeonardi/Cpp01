@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+         #
+#    By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 15:05:12 by fileonar          #+#    #+#              #
-#    Updated: 2025/07/23 18:24:03 by fileonar         ###   ########.fr        #
+#    Updated: 2025/08/11 15:33:49 by fefo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ OBJS = $(SRCS:%.cpp=%.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(LIB) -o $@ $^
+	$(CC) $(FLAGS) $(LIB) -o $@ $^
 
 clean:
 	@rm -f $(OBJS)
