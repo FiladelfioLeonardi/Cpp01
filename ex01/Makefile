@@ -6,13 +6,13 @@
 #    By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 18:33:41 by fileonar          #+#    #+#              #
-#    Updated: 2025/07/24 16:46:12 by fileonar         ###   ########.fr        #
+#    Updated: 2025/08/11 14:57:10 by fileonar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = zombieHorde
 
-CC = clang++
+CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98 -g
 
 SRCS =	main.cpp \
@@ -27,8 +27,8 @@ OBJS = $(SRCS:%.cpp=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(LIB) -o $@ $^
+$(NAME): $(SRCS)
+	$(CC) $(FLAGS) $(LIB) -o $@ $^
 
 clean:
 	@rm -f $(OBJS)

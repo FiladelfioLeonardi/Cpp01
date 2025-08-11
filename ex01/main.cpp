@@ -6,7 +6,7 @@
 /*   By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:19:36 by fileonar          #+#    #+#             */
-/*   Updated: 2025/07/24 16:42:21 by fileonar         ###   ########.fr       */
+/*   Updated: 2025/08/11 14:58:13 by fileonar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main()
 	}
 	// Clean up the horde
 	delete[] horde;
-	return 0;
+	return (0);
 }
 // Zombie* zombie1 = newZombie("Heap_Zombie1");
 // zombie1->announce();
