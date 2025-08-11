@@ -6,14 +6,14 @@
 #    By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 15:05:12 by fileonar          #+#    #+#              #
-#    Updated: 2025/08/11 15:35:03 by fefo             ###   ########.fr        #
+#    Updated: 2025/08/11 16:05:55 by fefo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = zombie
 
 CC = c++
-FLAGS = -Wall -Wextra -Werror -std=c++98 -g
+FLAGS = -Wall -Wextra -Werror -std=c++17 -g
 
 SRCS =	main.cpp \
 		newZombie.cpp \

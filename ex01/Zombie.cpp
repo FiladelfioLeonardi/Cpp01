@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:12:07 by fileonar          #+#    #+#             */
-/*   Updated: 2025/07/24 16:47:28 by fileonar         ###   ########.fr       */
+/*   Updated: 2025/08/11 16:16:10 by fefo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,7 @@
 
 Zombie::Zombie() : name("")
 {
-	std::cout << "Zombie is created with no name." << std::endl;
-}
-
-Zombie::Zombie(std::string name) : name(name)
-{
-	std::cout << "Zombie " << name << " is created." << std::endl;
+	std::cout << "Space allocated for initializing zombies." << std::endl;
 }
 
 Zombie::~Zombie()
@@ -32,7 +27,8 @@ void Zombie::announce() const
 	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void Zombie::setName(std::string name)
+void Zombie::setName(std::string name, int i)
 {
     this->name = name;
+	std::cout << "initialized zombie " << i << " with name: " << this->name << std::endl;
 }

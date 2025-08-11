@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:19:36 by fileonar          #+#    #+#             */
-/*   Updated: 2025/08/11 14:58:13 by fileonar         ###   ########.fr       */
+/*   Updated: 2025/08/11 16:16:51 by fefo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,3 @@ int main()
 	delete[] horde;
 	return (0);
 }
-// Zombie* zombie1 = newZombie("Heap_Zombie1");
-// zombie1->announce();
-// delete zombie1;
-// randomChump("Stack_Zombie2");
