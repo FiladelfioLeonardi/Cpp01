@@ -6,7 +6,7 @@
 #    By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/11 16:24:01 by fefo              #+#    #+#              #
-#    Updated: 2025/08/11 16:24:39 by fefo             ###   ########.fr        #
+#    Updated: 2025/08/11 17:02:00 by fefo             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,6 @@ CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++17 -g
 
 SRCS =	main.cpp
-
-HEADERS = Zombie.hpp
 
 LIB = -I .
  
