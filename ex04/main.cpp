@@ -6,11 +6,13 @@
 /*   By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 19:03:28 by fefo              #+#    #+#             */
-/*   Updated: 2025/08/13 13:55:17 by fefo             ###   ########.fr       */
+/*   Updated: 2025/08/14 19:35:19 by fefo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "replace.hpp"
+#include <iostream>
+#include <fstream>
+#include <string>
 
 int main(int argc, char **argv)
 {
