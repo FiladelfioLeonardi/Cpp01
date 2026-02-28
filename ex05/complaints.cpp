@@ -24,16 +24,16 @@ Harl::~Harl()
 
 void Harl::complain(const std::string level)
 {
-    if (level == "DEBUG")
-        debug();
-    else if (level == "INFO")
-        info();
-    else if (level == "WARNING")
-        warning();
-    else if (level == "ERROR")
-        error();
-    else
-        std::cout << "Unknown level: " << level << std::endl;
+    typedef void (Harl::*HarlFunc)();
+    const std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+    HarlFunc funcs[] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+    for (int i = 0; i < 4; ++i) {
+        if (level == levels[i]) {
+            (this->*funcs[i])();
+            return;
+        }
+    }
+    std::cout << "Unknown level: " << level << std::endl;
 }
 
 void Harl::debug()
